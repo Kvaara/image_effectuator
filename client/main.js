@@ -1,4 +1,7 @@
 const initialize = async () => {
+  const input = document.querySelector("#upload");
+  const image = document.querySelector("#new-img");
+
   let rustApp = null;
 
   try {
@@ -6,8 +9,6 @@ const initialize = async () => {
   } catch (err) {
     throw new Error(err);
   }
-
-  const input = document.querySelector("#upload");
 
   // FileReader will be used for transforming the binary file using Base64 encoding into a string
   const fileReader = new FileReader();
@@ -17,7 +18,8 @@ const initialize = async () => {
       /^data:image\/(png|jpeg|jpg);base64,/,
       ""
     );
-    rustApp.grayscale(base64);
+    let imgDataUrl = rustApp.grayscale(base64);
+    image.src = imgDataUrl;
   };
 
   input.addEventListener("change", () => {
