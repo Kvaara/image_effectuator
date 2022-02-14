@@ -18,7 +18,7 @@ const initialize = async () => {
       /^data:image\/(png|jpeg|jpg);base64,/,
       ""
     );
-    let imgDataUrl = rustApp.grayscale(base64);
+    let imgDataUrl = rustApp.brighten(base64);
     image.src = imgDataUrl;
   };
 
