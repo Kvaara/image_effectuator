@@ -23,6 +23,36 @@
           Need to do some basic image manipulation? Just upload your image below. We'll take care of the rest.
         </p>
         <hr class="mb-4">
+
+        <div class="flex justify-center mb-4 gap-3">
+          <div>
+            <label for="grayscale"
+             class="border rounded-xl flex p-3 items-center justify-center gap-2 transition-all
+              border-blue-400 cursor-pointer w-32 bg-blue-50 tracking-normal custom-radio select-none">
+              <input type="radio" name="manipulation-effect" id="grayscale" checked>
+              Grayscale
+            </label>
+          </div>
+          <div>
+            <label for="brighten"
+             class="border rounded-xl flex p-3 items-center justify-center gap-2 transition-all
+              border-blue-400 cursor-pointer w-32 tracking-wider custom-radio select-none">
+              <input type="radio" name="manipulation-effect" id="brighten">
+              Brighten
+            </label>
+          </div>
+
+          <div>
+            <label for="blur"
+             class="border rounded-xl flex p-3 items-center justify-center gap-2 transition-all
+              border-blue-400 cursor-pointer w-32 tracking-wider custom-radio select-none">
+              <input type="radio" name="manipulation-effect" id="blur">
+              Blur
+            </label>
+          </div>
+
+        </div>
+
         <div class="bg-gray-100 text-black w-full p-4 pb-5 block
           font-bold rounded-lg hover:bg-gray-300 hover:border-gray-500 tracking
           transition-all border-dashed border-2 border-gray-300 relative"
