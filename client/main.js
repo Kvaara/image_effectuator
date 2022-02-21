@@ -156,12 +156,12 @@ const removeRadioBtnsSelectedStyles = () => {
 
 const addRadioBtnSelectedStyles = (btn) => {
   btn.classList.remove("tracking-wider");
-  btn.classList.add("tracking-normal", "bg-blue-50");
+  btn.classList.add("tracking-normal", "bg-blue-100");
 };
 
 const removeRadioBtnSelectedStyles = (btn) => {
   btn.classList.add("tracking-wider");
-  btn.classList.remove("tracking-normal", "bg-blue-50");
+  btn.classList.remove("tracking-normal", "bg-blue-100");
 };
 
 const addDragStyles = () => {

@@ -15,7 +15,7 @@
     <div class="bg fixed inset-y-0 -inset-x-2/4 opacity-50 z-0 bg-gradient-to-r from-yellow-400 to-pink-500"></div>
     <div class="bg fixed inset-y-0 -inset-x-2/4 opacity-50 z-0 bg-gradient-to-r from-yellow-400 to-pink-500"></div>
     <div class="bg fixed inset-y-0 -inset-x-2/4 opacity-50 z-0 bg-gradient-to-r from-yellow-400 to-pink-500"></div>
-    <div class="flex items-center justify-center h-screen relative z-100">
+    <div class="flex items-center justify-center relative z-100 h-screen">
     
       <div class="bg-white bg-opacity-90 border shadow-2xl p-5 text-center max-w-3xl rounded">
         <h1 class="text-5xl mb-4 text-left">Image Effectuator</h1>
@@ -29,8 +29,8 @@
           <div>
             <label for="grayscale"
              class="border rounded-xl flex p-3 items-center justify-center gap-2 transition-all
-              border-blue-400 cursor-pointer w-32 bg-blue-50 tracking-normal custom-radio select-none
-              hover:bg-blue-100">
+              border-blue-400 cursor-pointer w-32 bg-blue-100 tracking-normal custom-radio select-none
+              hover:bg-blue-200">
               <input type="radio" name="manipulation-effect" id="grayscale" checked>
               Grayscale
             </label>
@@ -39,7 +39,7 @@
             <label for="brighten"
              class="border rounded-xl flex p-3 items-center justify-center gap-2 transition-all
               border-blue-400 cursor-pointer w-32 tracking-wider custom-radio select-none
-              hover:bg-blue-100">
+              hover:bg-blue-200">
               <input type="radio" name="manipulation-effect" id="brighten">
               Brighten
             </label>
@@ -49,7 +49,7 @@
             <label for="blur"
              class="border rounded-xl flex p-3 items-center justify-center gap-2 transition-all
               border-blue-400 cursor-pointer w-32 tracking-wider custom-radio select-none
-              hover:bg-blue-100">
+              hover:bg-blue-200">
               <input type="radio" name="manipulation-effect" id="blur">
               Blur
             </label>
@@ -85,14 +85,14 @@
         <div class="hidden mt-4" id="images">
           <div>
             <!-- <h2 class="text-left text-xl">From this:</h2> -->
-            <img id="old-img" class="w-auto mx-auto mt-1 rounded border border-black">
+            <img id="old-img" class="w-auto mx-auto mt-1 rounded border border-gray-300 w-2/4 h-2/4">
           </div>
-          <span class="text-5xl material-icons-round text-blue-700 mt-1 pointer-events-none">
+          <span class="text-6xl material-icons-round text-blue-700 mt-1 pointer-events-none">
             south
           </span>
           <div>
             <!-- <h2 class="text-left text-xl">To this:</h2> -->
-            <img id="new-img" class="w-auto mx-auto rounded border border-black">
+            <img id="new-img" class="w-auto mx-auto rounded border border-gray-300 w-2/4 h-2/4">
           </div>
         </div>
 
